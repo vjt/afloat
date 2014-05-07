@@ -365,6 +365,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 - (void) mouseEntered:(NSEvent*) e {
 	L0Log(@"%@", e);
 	
+	if ([self isWindowOverlay:[e window]]) return;
+	
 	[self animateFadeInForWindow:[e window]];
 
     BOOL focusFollowsMouse = [[AfloatStorage globalValueForKey:@"FocusFollowsMouse"] boolValue];
@@ -392,6 +394,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 - (void) mouseExited:(NSEvent*) e {
 	L0Log(@"%@", e);
+	
+	if ([self isWindowOverlay:[e window]]) return;
 	
 	[self animateFadeOutForWindow:[e window]];
 }
