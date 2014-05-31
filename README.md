@@ -47,7 +47,7 @@ Thanks for reading! :smile:
 
 [afloat-screenie]: https://raw.githubusercontent.com/vjt/afloat/master/screenshot.png
 [simbl-repo]: https://github.com/norio-nomura/EasySIMBL#how-to-install
-[current-binary]: https://github.com/vjt/afloat/releases/download/v10.9/Afloat_10.9_x86-64.bundle.zip
+[current-binary]: https://github.com/vjt/afloat/releases/latest
 [chrome-64bit]: https://code.google.com/p/chromium/issues/detail?id=18323
 
 [@millenomi]: https://github.com/millenomi
