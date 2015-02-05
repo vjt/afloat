@@ -23,8 +23,8 @@ Caveats
 -------
 
 I was able to compile this only for 64-bit architectures, so it doesn't work
-with 32-bit applications. Notably, Chrome is one of these. If you're
-interested when Chrome will be 64-bit ready, [follow this bug][chrome-64bit].
+with 32-bit applications. Chrome *was* one of these, but [as of Chrome 39][chrome-64bit], it's 
+released as a 64-bit app, and Afloat works with it.
 
 Credits
 -------
@@ -48,7 +48,7 @@ Thanks for reading! :smile:
 [afloat-screenie]: https://raw.githubusercontent.com/vjt/afloat/master/screenshot.png
 [simbl-repo]: https://github.com/norio-nomura/EasySIMBL#how-to-install
 [current-binary]: https://github.com/vjt/afloat/releases/latest
-[chrome-64bit]: https://code.google.com/p/chromium/issues/detail?id=18323
+[chrome-64bit]: https://code.google.com/p/chromium/issues/detail?id=18323#c74
 
 [@millenomi]: https://github.com/millenomi
 [@fjolnir]: https://github.com/fjolnir
