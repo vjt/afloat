@@ -15,7 +15,7 @@
 - (id) performDefaultImplementation {
 	float alphaValue = [[self directParameter] floatValue];
 	
-	[[NSApp delegate] rearmDeathTimer];
+	[(AfloatScriptingAppDelegate*)[NSApp delegate] rearmDeathTimer];
 	[[NSDistributedNotificationCenter defaultCenter] postNotificationName:kAfloatScriptSetAlphaValueNotification object:kAfloatScriptWireObject userInfo:
 	 [NSDictionary dictionaryWithObjectsAndKeys:
 	  [NSNumber numberWithFloat:alphaValue], @"alphaValue",

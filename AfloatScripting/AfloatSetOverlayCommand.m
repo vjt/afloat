@@ -16,7 +16,7 @@
 	BOOL showsBadgeAnimation = AfloatBOOLFromObject([[self evaluatedArguments] objectForKey:@"showsBadgeAnimation"], YES);
 	BOOL overlay = AfloatBOOLFromObject([self directParameter], NO);
 	
-	[[NSApp delegate] rearmDeathTimer];
+	[(AfloatScriptingAppDelegate*)[NSApp delegate] rearmDeathTimer];
 	[[NSDistributedNotificationCenter defaultCenter] postNotificationName:kAfloatScriptSetOverlayNotification object:kAfloatScriptWireObject userInfo:
 	 [NSDictionary dictionaryWithObjectsAndKeys:
 	  [NSNumber numberWithBool:showsBadgeAnimation], @"showsBadgeAnimation",

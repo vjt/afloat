@@ -22,7 +22,7 @@ typedef NSUInteger AfloatBadgeType;
 	unsigned int enqueuedFades;
 }
 
-@property(strong) NSWindow* parentWindow;
+@property(strong, getter=getParentWindow, setter=setParentWindow:) NSWindow* parentWindow;
 
 - (id) initAttachedToWindow:(NSWindow*) parentWindow;
 + (id) badgeControllerForWindow:(NSWindow*) w;
