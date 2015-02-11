@@ -14,7 +14,7 @@
 
 - (id) performDefaultImplementation {
 	BOOL showsBadgeAnimation = AfloatBOOLFromObject([[self evaluatedArguments] objectForKey:@"showsBadgeAnimation"], YES);	
-	[[NSApp delegate] rearmDeathTimer];
+	[(AfloatScriptingAppDelegate*)[NSApp delegate] rearmDeathTimer];
 	[[NSDistributedNotificationCenter defaultCenter] postNotificationName:kAfloatScriptToggleKeptAfloatNotification object:kAfloatScriptWireObject userInfo:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:showsBadgeAnimation] forKey:@"showsBadgeAnimation"]];
 	return nil;
 }

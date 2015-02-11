@@ -13,7 +13,7 @@
 @implementation AfloatMakeMoreTransparentCommand
 
 - (id) performDefaultImplementation {
-	[[NSApp delegate] rearmDeathTimer];
+	[(AfloatScriptingAppDelegate*)[NSApp delegate] rearmDeathTimer];
 	
 	[[NSDistributedNotificationCenter defaultCenter]
 	 postNotificationName:kAfloatScriptMoreTransparentNotification object:kAfloatScriptWireObject];

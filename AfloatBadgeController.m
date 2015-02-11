@@ -42,7 +42,9 @@
 	L0Log(@"badge view = %@", badgeView);
 }
 
-@synthesize parentWindow = _parentWindow;
+- (NSWindow*) getParentWindow {
+    return _parentWindow;
+}
 - (void) setParentWindow:(NSWindow*) newParent {
 	if (newParent != _parentWindow) {
 		if (_parentWindow) {

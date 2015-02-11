@@ -13,7 +13,7 @@
 @implementation AfloatShowWindowFileInFinderCommand
 
 - (id) performDefaultImplementation {
-	[[NSApp delegate] rearmDeathTimer];
+	[(AfloatScriptingAppDelegate*)[NSApp delegate] rearmDeathTimer];
 	
 	[[NSDistributedNotificationCenter defaultCenter]
 	 postNotificationName:kAfloatScriptShowWindowFileInFinderNotification object:kAfloatScriptWireObject];
