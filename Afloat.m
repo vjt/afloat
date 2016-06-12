@@ -17,7 +17,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 #import "AfloatStorage.h"
 #import "AfloatPanelController.h"
 #import "AfloatBadgeController.h"
-#import "Afloat_AfloatNagging.h"
 #import "Afloat_AfloatScripting.h"
 
 #define kAfloatTranslucentAlphaValue (0.7f)
