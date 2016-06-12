@@ -9,21 +9,23 @@
 	<key>CFBundleIconFile</key>
 	<string>Afloat2</string>
 	<key>CFBundleIdentifier</key>
-	<string>net.infinite-labs.Afloat</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>${USER_VISIBLE_VERSION}</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>${VERSION}</string>
-	<key>CFBundleShortVersionString</key>
-	<string>${USER_VISIBLE_VERSION}</string>
 	<key>NSPrincipalClass</key>
 	<string>Afloat</string>
+	<key>PlSUpdatesCheckURL</key>
+	<string>http://infinite-labs.net/afloat/current/</string>
 	<key>SIMBLTargetApplications</key>
 	<array>
 		<dict>
@@ -31,7 +33,5 @@
 			<string>*</string>
 		</dict>
 	</array>
-	<key>PlSUpdatesCheckURL</key>
-	<string>http://infinite-labs.net/afloat/current/</string>
 </dict>
 </plist>

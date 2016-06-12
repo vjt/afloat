@@ -60,7 +60,7 @@ static float AfloatFloatFromObject(id object, float defaultValue) {
 	NSString* pathToScriptingApp = [[[[NSBundle bundleForClass:[self class]] bundlePath] stringByAppendingPathComponent:@"Contents"] stringByAppendingPathComponent:@"Afloat Scripting.app"];
 	LSRegisterURL((__bridge CFURLRef) [NSURL fileURLWithPath:pathToScriptingApp], false);
 	
-	L0LogS(@"Scripting support installed.");
+	//L0LogS(@"Scripting support installed.");
 }
 
 - (void) _scriptShouldShowWindowFileInFinder:(NSNotification*) n {
@@ -68,7 +68,7 @@ static float AfloatFloatFromObject(id object, float defaultValue) {
 	
 	[self showWindowFileInFinder:self];
 	
-	L0LogS(@"Script: Tried to show the window's file in the Finder.");
+	//L0LogS(@"Script: Tried to show the window's file in the Finder.");
 }
 
 - (void) _scriptShouldMakeLessTransparent:(NSNotification*) n {
@@ -76,7 +76,7 @@ static float AfloatFloatFromObject(id object, float defaultValue) {
 	
 	[self makeLessTransparent:self];
 	
-	L0LogS(@"Script: Made less transparent.");
+	//L0LogS(@"Script: Made less transparent.");
 }
 
 - (void) _scriptShouldMakeMoreTransparent:(NSNotification*) n {
@@ -84,7 +84,7 @@ static float AfloatFloatFromObject(id object, float defaultValue) {
 	
 	[self makeMoreTransparent:self];
 	
-	L0LogS(@"Script: Made more transparent.");
+	//L0LogS(@"Script: Made more transparent.");
 }
 
 - (void) _scriptShouldDisableAllOverlays:(NSNotification*) n {
@@ -92,7 +92,7 @@ static float AfloatFloatFromObject(id object, float defaultValue) {
 	
 	[self disableAllOverlays:self];
 	
-	L0LogS(@"Script: Disabled all overlays.");
+	//L0LogS(@"Script: Disabled all overlays.");
 }
 
 - (void) _scriptShouldSetOverlay:(NSNotification*) n {
@@ -104,13 +104,13 @@ static float AfloatFloatFromObject(id object, float defaultValue) {
 	
 	[self setOverlay:isOverlay forWindow:w animated:YES showBadgeAnimation:showsBadgeAnimation];
 	
-	L0Log(@"Script: Set window overlay = %d with badge animation = %d", isOverlay, showsBadgeAnimation);
+	//L0Log(@"Script: Set window overlay = %d with badge animation = %d", isOverlay, showsBadgeAnimation);
 }
 
 - (void) _scriptShouldSetPinnedToDesktop:(NSNotification*) n {
 	if (![NSApp isActive]) return;
 	
-	L0Log(@"Script: will pin to desktop with notification = %@ userInfo = %@", n, [n userInfo]);
+	//L0Log(@"Script: will pin to desktop with notification = %@ userInfo = %@", n, [n userInfo]);
 	
 	NSWindow* w = [self currentWindow];
 	BOOL isPinnedToDesktop = AfloatBOOLFromObject([[n userInfo] objectForKey:@"pinnedToDesktop"], NO);
@@ -118,7 +118,7 @@ static float AfloatFloatFromObject(id object, float defaultValue) {
 
 	[self setKeptPinnedToDesktop:isPinnedToDesktop forWindow:w showBadgeAnimation:showsBadgeAnimation];
 	
-	L0Log(@"Script: Set window pinned to desktop = %d with badge animation = %d", isPinnedToDesktop, showsBadgeAnimation);
+	//L0Log(@"Script: Set window pinned to desktop = %d with badge animation = %d", isPinnedToDesktop, showsBadgeAnimation);
 }
 
 - (void) _scriptShouldSetKeptOnAllSpaces:(NSNotification*) n {
@@ -129,7 +129,7 @@ static float AfloatFloatFromObject(id object, float defaultValue) {
 	
 	[self setOnAllSpaces:isKeptOnAllSpaces forWindow:w];
 	
-	L0Log(@"Script: Set window on all spaces = %d", isKeptOnAllSpaces);
+	//L0Log(@"Script: Set window on all spaces = %d", isKeptOnAllSpaces);
 }
 
 - (void) _scriptShouldToggleKeptAfloat:(NSNotification*) n {
@@ -142,7 +142,7 @@ static float AfloatFloatFromObject(id object, float defaultValue) {
 	if (w)
 		[self setKeptAfloat:!isKeptAfloat forWindow:w showBadgeAnimation:showsBadgeAnimation];
 	
-	L0Log(@"Script: Did toggle kept afloat with badge animation = %d", showsBadgeAnimation);
+	//L0Log(@"Script: Did toggle kept afloat with badge animation = %d", showsBadgeAnimation);
 }
 
 - (void) _scriptShouldSetKeptAfloat:(NSNotification*) n {
@@ -158,7 +158,7 @@ static float AfloatFloatFromObject(id object, float defaultValue) {
 	if (w)
 		[self setKeptAfloat:keepAfloat forWindow:w showBadgeAnimation:showsBadgeAnimation];
 	
-	L0Log(@"Script: Did set kept afloat = %d with badge animation = %d", keepAfloat, showsBadgeAnimation);
+	//L0Log(@"Script: Did set kept afloat = %d with badge animation = %d", keepAfloat, showsBadgeAnimation);
 }
 
 - (void) _scriptShouldSetAlphaValue:(NSNotification*) n {
@@ -170,7 +170,7 @@ static float AfloatFloatFromObject(id object, float defaultValue) {
 	if (w)
 		[self setAlphaValue:alphaValue forWindow:w animated:YES];
 	
-	L0Log(@"Script: Did set alpha value = %f", alphaValue);
+	//L0Log(@"Script: Did set alpha value = %f", alphaValue);
 }
 
 @end
