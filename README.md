@@ -43,7 +43,7 @@ Thanks for reading!
 
 [afloat-screenie]: https://raw.githubusercontent.com/vjt/afloat/master/screenshot.png
 [simbl-repo]: https://github.com/w0lfschild/mySIMBL
-[current-binary]: https://github.com/w0lfschild/afloat/build
+[current-binary]: https://github.com/w0lfschild/afloat/tree/master/build
 
 [@millenomi]: https://github.com/millenomi
 [@fjolnir]: https://github.com/fjolnir
