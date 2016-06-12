@@ -6,7 +6,7 @@
 //  Copyright 2008 Emanuele Vulcano. All rights reserved.
 //
 
-VERSION = 2.5.0
-USER_VISIBLE_VERSION = 2.5.0
+VERSION = 2.5.1
+USER_VISIBLE_VERSION = 2.5.1
 
 INFINITELABS_CODE_SIGNING_IDENTITY = Infinite Labs Code Signing (Mac OS X)

@@ -137,11 +137,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidBecomeMain:) name:NSWindowDidBecomeMainNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidResignMain:) name:NSWindowDidResignMainNotification object:nil];
 	
-	// Nag, nag, nag, nag, nag, nag, nag, nag...
-	// delayed -- PS already slows down app launch enough.
-	//[self checkForNagOnInstall];
-	[self performSelector:@selector(checkForNagOnInstall) withObject:nil afterDelay:7.0];
-	
 	// Scripting support.
 	[self installScriptingSupport];
     
