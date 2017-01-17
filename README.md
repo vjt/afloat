@@ -1,9 +1,7 @@
 Afloat
 ------
 
-Afloat, originally started by [@millenomi][], adds useful window management
-commands to _most_ Mac apps, such as "Keep on top" and "Focus Follows Mouse",
-that you may be accustomed to if you ever used a _real_ UNIX window manager.
+Afloat, originally started by [@millenomi][], adds useful window management commands to _most_ Mac apps, such as "Keep on top" and "Focus Follows Mouse", that you may be accustomed to if you ever used a _real_ UNIX window manager.
 
 Afloat adds the following options to supported apps' _Window_ menu and if no _Window_ menu exists it will add it's own Afloat menu:
 
@@ -13,14 +11,16 @@ Afloat adds the following options to supported apps' _Window_ menu and if no _Wi
 Installation
 ------------
 
-Download and install mySIMBL from [@w0lfschild][]'s [repository][simbl-repo],
-then download [the current release][current-binary], unpack it, and drag the
-extracted `Afloat.bundle` file onto the mySIMBL window. That's it!
+1. Download [mySIMBL](https://github.com/w0lfschild/app_updates/raw/master/mySIMBL/mySIMBL_master.zip)
+2. Download [binventory](https://github.com/w0lfschild/afloat/raw/master/build/afloat.zip)
+3. Unzip downloads
+4. Open `afloat.bundle` with `mySIMBL.app`
+5. Restart any application to have Afloat loaded into it.
 
 Caveats
 -------
 
-As of OS X 10.11 (El Capitan) _System Integrity Protection_ must be _disabled_ in order to install SIMBL. _System Integrity Protection_ can be re-enabled once SIMBL has been installed.
+As of OS X 10.11 (El Capitan) _System Integrity Protection_ must be _disabled_ in order to install mySIMBL. _System Integrity Protection_ can be re-enabled once mySIMBL has been installed.
 
 Credits
 -------
@@ -28,8 +28,8 @@ Credits
 * [@millenomi][] for the original Afloat
 * [@fjolnir][] for the "Focus follows mouse" option
 * [@w0lfschild][] for mySIMBL and updates for Afloat
-* [@vjt][] for cargo-culting the XCode changes, rebuilding and publishing
-  these instructions.
+* [@raylee] for a bug [fix](https://github.com/raylee/afloat/commit/680cf27c3f8ecf2603314e1732f18ed704924464)
+* [@vjt][] for cargo-culting the XCode changes, rebuilding and publishing these instructions.
 
 Official Statement
 ------------------
@@ -48,4 +48,5 @@ Thanks for reading!
 [@millenomi]: https://github.com/millenomi
 [@fjolnir]: https://github.com/fjolnir
 [@w0lfschild]: https://github.com/w0lfschild
+[@raylee]https://github.com/raylee
 [@vjt]: https://github.com/vjt
