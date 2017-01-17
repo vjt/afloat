@@ -28,7 +28,7 @@ Credits
 * [@millenomi][] for the original Afloat
 * [@fjolnir][] for the "Focus follows mouse" option
 * [@w0lfschild][] for mySIMBL and updates for Afloat
-* [@raylee] for a bug [fix](https://github.com/raylee/afloat/commit/680cf27c3f8ecf2603314e1732f18ed704924464)
+* [@raylee][] for a bug [fix](https://github.com/raylee/afloat/commit/680cf27c3f8ecf2603314e1732f18ed704924464)
 * [@vjt][] for cargo-culting the XCode changes, rebuilding and publishing these instructions.
 
 Official Statement
@@ -48,5 +48,5 @@ Thanks for reading!
 [@millenomi]: https://github.com/millenomi
 [@fjolnir]: https://github.com/fjolnir
 [@w0lfschild]: https://github.com/w0lfschild
-[@raylee]https://github.com/raylee
+[@raylee]: https://github.com/raylee
 [@vjt]: https://github.com/vjt
