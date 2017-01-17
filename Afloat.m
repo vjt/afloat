@@ -64,7 +64,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 	static BOOL alreadyLoaded = NO;
 	if (alreadyLoaded) return; alreadyLoaded = YES;
 	
-	[[self sharedInstance] install];
+    [[self sharedInstance] performSelector:@selector(install) withObject:[self sharedInstance] afterDelay:1.0];
 }
 
 - (id) init {
