@@ -86,15 +86,15 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 	// Set up menu items ---------------------------------------
 	
 	NSMenu* menu = [NSApp windowsMenu];
-    
-	if (!menu) {
+//
+//	if (!menu) {
         // Make an Afloat menu instead of giving up
         NSMenu *fileMenu = [[NSMenu alloc] initWithTitle:@"Afloat"];
         menu = fileMenu;
-        NSMenuItem *fileMenuItem = [[NSMenuItem alloc] initWithTitle:@"" action:nil keyEquivalent:@""];
+        NSMenuItem *fileMenuItem = [[NSMenuItem alloc] initWithTitle:@"Afloat" action:nil keyEquivalent:@""];
         [fileMenuItem setSubmenu: fileMenu];
         [[NSApp mainMenu] addItem: fileMenuItem];
-	}
+//	}
 	
 	NSUInteger index = [self indexForInstallingInMenu:menu];
 	

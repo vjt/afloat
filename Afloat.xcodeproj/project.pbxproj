@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		153C040B0D882C3700037E2F /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C040A0D882C3700037E2F /* JRSwizzle.m */; };
-		153C04180D882CEF00037E2F /* Afloat.nib in Resources */ = {isa = PBXBuildFile; fileRef = 153C04160D882CEF00037E2F /* Afloat.nib */; };
 		1545809A0ECE273700F3D3D7 /* libBGHUDAppKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 154580990ECE273700F3D3D7 /* libBGHUDAppKit.a */; };
 		1547F4300F0A4E02000E4267 /* Afloat_AfloatScripting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547F42F0F0A4E02000E4267 /* Afloat_AfloatScripting.m */; };
 		1547F5160F0A7EB7000E4267 /* Afloat Scripting.app in Copy Auxiliary Applications */ = {isa = PBXBuildFile; fileRef = 1547F5130F0A7E8D000E4267 /* Afloat Scripting.app */; };
@@ -19,15 +18,16 @@
 		15950BEF0D7F4C8700D48A24 /* AfloatPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15950BEC0D7F4C8700D48A24 /* AfloatPanel.m */; };
 		15950BF00D7F4C8700D48A24 /* AfloatPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15950BEE0D7F4C8700D48A24 /* AfloatPanelController.m */; };
 		15950BF40D7F4C9A00D48A24 /* AfloatHUDBackdrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 15950BF30D7F4C9A00D48A24 /* AfloatHUDBackdrop.png */; };
-		15950BFA0D7F4CA900D48A24 /* AfloatPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 15950BF90D7F4CA900D48A24 /* AfloatPanel.nib */; };
 		15A957DE0D7C347A002CFBB8 /* AfloatStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A957DD0D7C347A002CFBB8 /* AfloatStorage.m */; };
 		15B914270D721E5B005D9404 /* AfloatMenuBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = 15B914260D721E5B005D9404 /* AfloatMenuBadge.png */; };
 		15C88C0F0E67149C003B01AA /* AfloatWindowIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C88C0E0E67149C003B01AA /* AfloatWindowIdentifier.m */; };
 		15CB74510D8932F6002BAA81 /* AfloatFloatingBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB74500D8932F6002BAA81 /* AfloatFloatingBadge.png */; };
-		15CB745C0D89336B002BAA81 /* AfloatBadge.nib in Resources */ = {isa = PBXBuildFile; fileRef = 15CB745A0D89336B002BAA81 /* AfloatBadge.nib */; };
 		15CB745F0D8933B1002BAA81 /* AfloatBadgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB745E0D8933B1002BAA81 /* AfloatBadgeController.m */; };
 		15F2FF6D0D6611BC00737D76 /* Afloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2FF6C0D6611BC00737D76 /* Afloat.m */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		FB80DBE6231C1BD200823B67 /* AfloatBadge.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB80DBE0231C1BD200823B67 /* AfloatBadge.xib */; };
+		FB80DBE7231C1BD200823B67 /* Afloat.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB80DBE2231C1BD200823B67 /* Afloat.xib */; };
+		FB80DBE8231C1BD200823B67 /* AfloatPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB80DBE4231C1BD200823B67 /* AfloatPanel.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,9 +87,6 @@
 		15950BED0D7F4C8700D48A24 /* AfloatPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AfloatPanelController.h; sourceTree = "<group>"; };
 		15950BEE0D7F4C8700D48A24 /* AfloatPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AfloatPanelController.m; sourceTree = "<group>"; };
 		15950BF30D7F4C9A00D48A24 /* AfloatHUDBackdrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AfloatHUDBackdrop.png; sourceTree = "<group>"; };
-		15A015B00E9BCB14006B819C /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/Afloat.nib; sourceTree = "<group>"; };
-		15A015B10E9BCB23006B819C /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/AfloatPanel.nib; sourceTree = "<group>"; };
-		15A015B20E9BCB26006B819C /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/AfloatBadge.nib; sourceTree = "<group>"; };
 		15A015B30E9BCB2B006B819C /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		15A957DC0D7C347A002CFBB8 /* AfloatStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AfloatStorage.h; sourceTree = "<group>"; };
 		15A957DD0D7C347A002CFBB8 /* AfloatStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AfloatStorage.m; sourceTree = "<group>"; };
@@ -105,6 +102,9 @@
 		32DBCF630370AF2F00C91783 /* Afloat_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Afloat_Prefix.pch; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* Afloat.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Afloat.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB80DBEB231C1DB300823B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Afloat.xib; sourceTree = "<group>"; };
+		FB80DBEC231C1DB300823B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AfloatBadge.xib; sourceTree = "<group>"; };
+		FB80DBED231C1DB300823B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AfloatPanel.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,9 +151,9 @@
 				157C236A0D801D8C00A39E33 /* AfloatButtonPressed.png */,
 				15950BF30D7F4C9A00D48A24 /* AfloatHUDBackdrop.png */,
 				15B914260D721E5B005D9404 /* AfloatMenuBadge.png */,
-				153C04160D882CEF00037E2F /* Afloat.nib */,
-				15950BF90D7F4CA900D48A24 /* AfloatPanel.nib */,
-				15CB745A0D89336B002BAA81 /* AfloatBadge.nib */,
+				FB80DBE2231C1BD200823B67 /* Afloat.xib */,
+				FB80DBE0231C1BD200823B67 /* AfloatBadge.xib */,
+				FB80DBE4231C1BD200823B67 /* AfloatPanel.xib */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 			);
@@ -254,20 +254,26 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					8D5B49AC048680CD000E48DA = {
+						DevelopmentTeam = EX596BNL45;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Afloat" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
 				"zh-Hant",
 				en,
 				it,
+				fr,
+				Base,
+				de,
+				ja,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* Afloat */;
 			projectDirPath = "";
@@ -300,16 +306,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				FB80DBE7231C1BD200823B67 /* Afloat.xib in Resources */,
 				15B914270D721E5B005D9404 /* AfloatMenuBadge.png in Resources */,
+				FB80DBE6231C1BD200823B67 /* AfloatBadge.xib in Resources */,
 				15950BF40D7F4C9A00D48A24 /* AfloatHUDBackdrop.png in Resources */,
-				15950BFA0D7F4CA900D48A24 /* AfloatPanel.nib in Resources */,
 				157C23650D801C7A00A39E33 /* AfloatButton.png in Resources */,
 				157C236B0D801D8C00A39E33 /* AfloatButtonPressed.png in Resources */,
-				153C04180D882CEF00037E2F /* Afloat.nib in Resources */,
 				15CB74510D8932F6002BAA81 /* AfloatFloatingBadge.png in Resources */,
-				15CB745C0D89336B002BAA81 /* AfloatBadge.nib in Resources */,
 				154B2E140D895DD2004593D4 /* AfloatSinkingBadge.png in Resources */,
 				15522F9D0D999F770007B44F /* Afloat2.icns in Resources */,
+				FB80DBE8231C1BD200823B67 /* AfloatPanel.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +334,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\nSETICON=\"$MULTIVERSE\"/Tools/Xcode/seticon\n\nif [ -f \"$SETICON\" -a -x \"$SETICON\" ]; then\n\t\"$SETICON\" -d \"$SRCROOT\"/Afloat2.icns \"$BUILT_PRODUCTS_DIR\"/\"$WRAPPER_NAME\"\nfi\n\n\"$DEVELOPER_TOOLS_DIR\"/SetFile -a EBC \"$BUILT_PRODUCTS_DIR\"/\"$WRAPPER_NAME\"\n";
+			shellScript = "#SETICON=\"$MULTIVERSE\"/Tools/Xcode/seticon\n#if [ -f \"$SETICON\" -a -x \"$SETICON\" ]; then\n#    \"$SETICON\" -d \"$SRCROOT\"/Afloat2.icns \"$BUILT_PRODUCTS_DIR\"/\"$WRAPPER_NAME\"\n#fi\n#\"$DEVELOPER_TOOLS_DIR\"/SetFile -a EBC \"$BUILT_PRODUCTS_DIR\"/\"$WRAPPER_NAME\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -367,28 +373,28 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		153C04160D882CEF00037E2F /* Afloat.nib */ = {
+		FB80DBE0231C1BD200823B67 /* AfloatBadge.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				15A015B00E9BCB14006B819C /* en */,
+				FB80DBEC231C1DB300823B67 /* Base */,
 			);
-			name = Afloat.nib;
+			name = AfloatBadge.xib;
 			sourceTree = "<group>";
 		};
-		15950BF90D7F4CA900D48A24 /* AfloatPanel.nib */ = {
+		FB80DBE2231C1BD200823B67 /* Afloat.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				15A015B10E9BCB23006B819C /* en */,
+				FB80DBEB231C1DB300823B67 /* Base */,
 			);
-			name = AfloatPanel.nib;
+			name = Afloat.xib;
 			sourceTree = "<group>";
 		};
-		15CB745A0D89336B002BAA81 /* AfloatBadge.nib */ = {
+		FB80DBE4231C1BD200823B67 /* AfloatPanel.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				15A015B20E9BCB26006B819C /* en */,
+				FB80DBED231C1DB300823B67 /* Base */,
 			);
-			name = AfloatBadge.nib;
+			name = AfloatPanel.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -400,7 +406,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2.5.3;
+				DEVELOPMENT_TEAM = EX596BNL45;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -419,9 +429,11 @@
 					"\"$(SRCROOT)\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 2.5.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.infinite-labs.Afloat";
 				PRODUCT_NAME = Afloat;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				USER_VISIBLE_VERSION = 2.5.2;
 				VERSION = 2.5.2;
@@ -436,8 +448,12 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2.5.3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = EX596BNL45;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -453,9 +469,11 @@
 					"\"$(SRCROOT)\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 2.5.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.infinite-labs.Afloat";
 				PRODUCT_NAME = Afloat;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				USER_VISIBLE_VERSION = 2.5.2;
 				VERSION = 2.5.2;
@@ -468,12 +486,20 @@
 			baseConfigurationReference = 1512ABDB0E09AB7300BA67AC /* Afloat.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -498,12 +524,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
