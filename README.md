@@ -12,7 +12,7 @@ Installation
 ------------
 
 1. Download [mySIMBL](https://github.com/w0lfschild/app_updates/raw/master/mySIMBL/mySIMBL_master.zip)
-2. Download [binventory](https://github.com/w0lfschild/afloat/raw/master/build/afloat.zip)
+2. Download [Afloat](https://raw.githubusercontent.com/w0lfschild/afloat/master/build/Afloat.zip)
 3. Unzip downloads
 4. Open `afloat.bundle` with `mySIMBL.app`
 5. Restart any application to have Afloat loaded into it.
