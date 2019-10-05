@@ -11,11 +11,9 @@ Afloat adds the following options to supported apps' _Window_ menu and if no _Wi
 Installation
 ------------
 
-1. Download [mySIMBL](https://github.com/w0lfschild/app_updates/raw/master/mySIMBL/mySIMBL_master.zip)
-2. Download [Afloat](https://raw.githubusercontent.com/w0lfschild/afloat/master/build/Afloat.zip)
-3. Unzip downloads
-4. Open `afloat.bundle` with `mySIMBL.app`
-5. Restart any application to have Afloat loaded into it.
+1. Download and open [MacForge](https://github.com/w0lfschild/app_updates/raw/master/MacForge/MacForge.zip)
+2. Install [Afloat](https://www.macenhance.com/mflink?macforge://github.com/w0lfschild/myRepo/raw/master/mytweaks/net.infinite-labs.Afloat)
+3. Restart any application to have Afloat loaded into it.
 
 Caveats
 -------
