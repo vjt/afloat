@@ -39,7 +39,7 @@
 	[[self window] setAnimations:
 	 [NSDictionary dictionaryWithObject:ani forKey:@"frameOrigin"]];
 	
-	L0Log(@"badge view = %@", badgeView);
+	//L0Log(@"badge view = %@", badgeView);
 }
 
 - (NSWindow*) getParentWindow {
@@ -168,9 +168,9 @@
 + (NSImage*) didBeginKeepingAfloatBadge {
 	static NSImage* image = nil; if (!image) {
 		NSBundle* bundle = [NSBundle bundleForClass:self];
-		L0Log(@"loading %@", [bundle pathForImageResource:@"AfloatFloatingBadge"]);
+		//L0Log(@"loading %@", [bundle pathForImageResource:@"AfloatFloatingBadge"]);
 		image = [[NSImage alloc] initWithContentsOfFile:[bundle pathForImageResource:@"AfloatFloatingBadge"]];
-		L0Log(@"%@", image);
+		//L0Log(@"%@", image);
 	}
 	
 	return image;
@@ -179,9 +179,9 @@
 + (NSImage*) didEndKeepingAfloatBadge {
 	static NSImage* image = nil; if (!image) {
 		NSBundle* bundle = [NSBundle bundleForClass:self];
-		L0Log(@"loading %@", [bundle pathForImageResource:@"AfloatSinkingBadge"]);
+		//L0Log(@"loading %@", [bundle pathForImageResource:@"AfloatSinkingBadge"]);
 		image = [[NSImage alloc] initWithContentsOfFile:[bundle pathForImageResource:@"AfloatSinkingBadge"]];
-		L0Log(@"%@", image);
+		//L0Log(@"%@", image);
 	}
 	
 	return image;

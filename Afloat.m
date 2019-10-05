@@ -17,7 +17,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 #import "AfloatStorage.h"
 #import "AfloatPanelController.h"
 #import "AfloatBadgeController.h"
-#import "Afloat_AfloatNagging.h"
 #import "Afloat_AfloatScripting.h"
 
 #define kAfloatTranslucentAlphaValue (0.7f)
@@ -65,7 +64,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 	static BOOL alreadyLoaded = NO;
 	if (alreadyLoaded) return; alreadyLoaded = YES;
 	
-	[[self sharedInstance] install];
+    [[self sharedInstance] performSelector:@selector(install) withObject:[self sharedInstance] afterDelay:1.0];
 }
 
 - (id) init {
@@ -87,10 +86,15 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 	// Set up menu items ---------------------------------------
 	
 	NSMenu* menu = [NSApp windowsMenu];
-	if (!menu) {
-		L0Log(@"%@ found no Window menu in NSApp %@", self, NSApp);
-		return;
-	}
+//
+//	if (!menu) {
+        // Make an Afloat menu instead of giving up
+        NSMenu *fileMenu = [[NSMenu alloc] initWithTitle:@"Afloat"];
+        menu = fileMenu;
+        NSMenuItem *fileMenuItem = [[NSMenuItem alloc] initWithTitle:@"Afloat" action:nil keyEquivalent:@""];
+        [fileMenuItem setSubmenu: fileMenu];
+        [[NSApp mainMenu] addItem: fileMenuItem];
+//	}
 	
 	NSUInteger index = [self indexForInstallingInMenu:menu];
 	
@@ -132,11 +136,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidBecomeMain:) name:NSWindowDidBecomeMainNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidResignMain:) name:NSWindowDidResignMainNotification object:nil];
-	
-	// Nag, nag, nag, nag, nag, nag, nag, nag...
-	// delayed -- PS already slows down app launch enough.
-	//[self checkForNagOnInstall];
-	[self performSelector:@selector(checkForNagOnInstall) withObject:nil afterDelay:7.0];
 	
 	// Scripting support.
 	[self installScriptingSupport];
@@ -195,14 +194,14 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 }
 
 - (void) setKeptAfloat:(BOOL) afloat forWindow:(NSWindow*) c showBadgeAnimation:(BOOL) animated {
-	L0Log(@"window = %@, will be afloat = %d, was afloat = %d", c, afloat, [self isWindowKeptAfloat:c]);
+	//L0Log(@"window = %@, will be afloat = %d, was afloat = %d", c, afloat, [self isWindowKeptAfloat:c]);
 	BOOL wasKeptElsewhere = [self isWindowKeptAfloat:c] || [self isWindowKeptPinnedToDesktop:c];
 
 	if (afloat) {
 		[c setLevel:NSFloatingWindowLevel];
 		
 		if (!wasKeptElsewhere && animated) {
-			L0LogS(@"Starting begin keeping afloat animation...");
+			//L0LogS(@"Starting begin keeping afloat animation...");
 			[[AfloatBadgeController badgeControllerForWindow:c] animateWithBadgeType:AfloatBadgeDidBeginKeepingAfloat];
 		}
 
@@ -210,7 +209,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 		[c setLevel:NSNormalWindowLevel];
 		
 		if (wasKeptElsewhere && animated) {
-			L0LogS(@"Starting end keeping afloat animation...");
+			//L0LogS(@"Starting end keeping afloat animation...");
 			[[AfloatBadgeController badgeControllerForWindow:c] animateWithBadgeType:AfloatBadgeDidEndKeepingAfloat];
 		}
 	}
@@ -336,7 +335,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 }
 
 - (void) beginTrackingWindow:(NSWindow*) window {
-	L0Log(@"window = %@", window);
+	//L0Log(@"window = %@", window);
 	if ([AfloatStorage sharedValueForWindow:window key:kAfloatTrackingAreaKey])
 		return;
 	
@@ -347,12 +346,12 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 	[AfloatStorage setSharedValue:tracker window:window key:kAfloatTrackingAreaKey];
 	[AfloatStorage setSharedValue:v window:window key:kAfloatTrackedViewKey];
 	
-	L0Log(@"tracker = %@ view = %@", tracker, v);
+	//L0Log(@"tracker = %@ view = %@", tracker, v);
 	
 }
 
 - (void) endTrackingWindow:(NSWindow*) window {
-	L0Log(@"window = %@", window);
+	//L0Log(@"window = %@", window);
 	NSTrackingArea* area = [AfloatStorage sharedValueForWindow:window key:kAfloatTrackingAreaKey];
 	NSView* view = [AfloatStorage sharedValueForWindow:window key:kAfloatTrackedViewKey];
 	if (view && area)
@@ -363,7 +362,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 }
 
 - (void) mouseEntered:(NSEvent*) e {
-	L0Log(@"%@", e);
+	//L0Log(@"%@", e);
 	
 	if ([self isWindowOverlay:[e window]]) return;
 	
@@ -393,7 +392,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 }
 
 - (void) mouseExited:(NSEvent*) e {
-	L0Log(@"%@", e);
+	//L0Log(@"%@", e);
 	
 	if ([self isWindowOverlay:[e window]]) return;
 	
@@ -476,7 +475,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 }
 
 - (void) setKeptPinnedToDesktop:(BOOL) pinned forWindow:(NSWindow*) c showBadgeAnimation:(BOOL) animated {
-	L0Log(@"window = %@, will be pinned to desktop = %d, was pinned to desktop = %d", c, pinned, [self isWindowKeptPinnedToDesktop:c]);
+	//L0Log(@"window = %@, will be pinned to desktop = %d, was pinned to desktop = %d", c, pinned, [self isWindowKeptPinnedToDesktop:c]);
 	// BOOL wasPinned = [self isWindowKeptAfloat:c];
 	// TODO: make a badge for "Pinned to Desktop"
 

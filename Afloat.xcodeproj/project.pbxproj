@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		151354B20D9E44F8007D56FA /* Afloat_AfloatNagging.m in Sources */ = {isa = PBXBuildFile; fileRef = 151354B10D9E44F8007D56FA /* Afloat_AfloatNagging.m */; };
 		153C040B0D882C3700037E2F /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C040A0D882C3700037E2F /* JRSwizzle.m */; };
-		153C04180D882CEF00037E2F /* Afloat.nib in Resources */ = {isa = PBXBuildFile; fileRef = 153C04160D882CEF00037E2F /* Afloat.nib */; };
 		1545809A0ECE273700F3D3D7 /* libBGHUDAppKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 154580990ECE273700F3D3D7 /* libBGHUDAppKit.a */; };
 		1547F4300F0A4E02000E4267 /* Afloat_AfloatScripting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547F42F0F0A4E02000E4267 /* Afloat_AfloatScripting.m */; };
 		1547F5160F0A7EB7000E4267 /* Afloat Scripting.app in Copy Auxiliary Applications */ = {isa = PBXBuildFile; fileRef = 1547F5130F0A7E8D000E4267 /* Afloat Scripting.app */; };
@@ -20,18 +18,16 @@
 		15950BEF0D7F4C8700D48A24 /* AfloatPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15950BEC0D7F4C8700D48A24 /* AfloatPanel.m */; };
 		15950BF00D7F4C8700D48A24 /* AfloatPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15950BEE0D7F4C8700D48A24 /* AfloatPanelController.m */; };
 		15950BF40D7F4C9A00D48A24 /* AfloatHUDBackdrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 15950BF30D7F4C9A00D48A24 /* AfloatHUDBackdrop.png */; };
-		15950BFA0D7F4CA900D48A24 /* AfloatPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 15950BF90D7F4CA900D48A24 /* AfloatPanel.nib */; };
-		15950C1E0D7F4D1600D48A24 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15950C1D0D7F4D1600D48A24 /* QuartzCore.framework */; };
 		15A957DE0D7C347A002CFBB8 /* AfloatStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A957DD0D7C347A002CFBB8 /* AfloatStorage.m */; };
 		15B914270D721E5B005D9404 /* AfloatMenuBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = 15B914260D721E5B005D9404 /* AfloatMenuBadge.png */; };
 		15C88C0F0E67149C003B01AA /* AfloatWindowIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C88C0E0E67149C003B01AA /* AfloatWindowIdentifier.m */; };
 		15CB74510D8932F6002BAA81 /* AfloatFloatingBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB74500D8932F6002BAA81 /* AfloatFloatingBadge.png */; };
-		15CB745C0D89336B002BAA81 /* AfloatBadge.nib in Resources */ = {isa = PBXBuildFile; fileRef = 15CB745A0D89336B002BAA81 /* AfloatBadge.nib */; };
 		15CB745F0D8933B1002BAA81 /* AfloatBadgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB745E0D8933B1002BAA81 /* AfloatBadgeController.m */; };
-		15EDDA380DA80E4C00C16A67 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1513548D0D9E41EC007D56FA /* Carbon.framework */; };
 		15F2FF6D0D6611BC00737D76 /* Afloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2FF6C0D6611BC00737D76 /* Afloat.m */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
-		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		FB80DBE6231C1BD200823B67 /* AfloatBadge.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB80DBE0231C1BD200823B67 /* AfloatBadge.xib */; };
+		FB80DBE7231C1BD200823B67 /* Afloat.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB80DBE2231C1BD200823B67 /* Afloat.xib */; };
+		FB80DBE8231C1BD200823B67 /* AfloatPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB80DBE4231C1BD200823B67 /* AfloatPanel.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,23 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		1512ABDB0E09AB7300BA67AC /* Afloat.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Afloat.xcconfig; sourceTree = "<group>"; };
-		1513541E0D9E3DF9007D56FA /* main-Nag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-Nag.m"; sourceTree = "<group>"; };
-		151354270D9E3E31007D56FA /* Donate for Afloat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Donate for Afloat-Info.plist"; sourceTree = "<group>"; };
-		1513543E0D9E3F5A007D56FA /* NSAlert+L0Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAlert+L0Alert.h"; path = "Alerts/NSAlert+L0Alert.h"; sourceTree = MULTIVERSE; };
-		1513543F0D9E3F5A007D56FA /* NSAlert+L0Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAlert+L0Alert.m"; path = "Alerts/NSAlert+L0Alert.m"; sourceTree = MULTIVERSE; };
-		1513547A0D9E4116007D56FA /* AfloatDonateFirstAlert.alert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AfloatDonateFirstAlert.alert; sourceTree = "<group>"; };
-		1513547B0D9E4116007D56FA /* AfloatDonateLastAlert.alert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AfloatDonateLastAlert.alert; sourceTree = "<group>"; };
-		151354850D9E415C007D56FA /* AfloatNag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AfloatNag.h; sourceTree = "<group>"; };
-		151354860D9E415C007D56FA /* AfloatNag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AfloatNag.m; sourceTree = "<group>"; };
-		151354880D9E418C007D56FA /* Nag.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nag.pch; sourceTree = "<group>"; };
-		1513548D0D9E41EC007D56FA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
-		151354B00D9E44F8007D56FA /* Afloat_AfloatNagging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Afloat_AfloatNagging.h; sourceTree = "<group>"; };
-		151354B10D9E44F8007D56FA /* Afloat_AfloatNagging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Afloat_AfloatNagging.m; sourceTree = "<group>"; };
-		151354B60D9E455E007D56FA /* AfloatNagPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AfloatNagPreferences.h; sourceTree = "<group>"; };
 		153C040A0D882C3700037E2F /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 		154580990ECE273700F3D3D7 /* libBGHUDAppKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBGHUDAppKit.a; sourceTree = "<group>"; };
 		1547F42E0F0A4E02000E4267 /* Afloat_AfloatScripting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Afloat_AfloatScripting.h; sourceTree = "<group>"; };
@@ -107,14 +87,7 @@
 		15950BED0D7F4C8700D48A24 /* AfloatPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AfloatPanelController.h; sourceTree = "<group>"; };
 		15950BEE0D7F4C8700D48A24 /* AfloatPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AfloatPanelController.m; sourceTree = "<group>"; };
 		15950BF30D7F4C9A00D48A24 /* AfloatHUDBackdrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AfloatHUDBackdrop.png; sourceTree = "<group>"; };
-		15950C1D0D7F4D1600D48A24 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
-		15A015B00E9BCB14006B819C /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/Afloat.nib; sourceTree = "<group>"; };
-		15A015B10E9BCB23006B819C /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/AfloatPanel.nib; sourceTree = "<group>"; };
-		15A015B20E9BCB26006B819C /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/AfloatBadge.nib; sourceTree = "<group>"; };
 		15A015B30E9BCB2B006B819C /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		15A015B60E9BCBA3006B819C /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/Donate.nib; sourceTree = "<group>"; };
-		15A015B70E9BCBAB006B819C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AfloatDonateLastAlert.strings; sourceTree = "<group>"; };
-		15A015B80E9BCBB0006B819C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AfloatDonateFirstAlert.strings; sourceTree = "<group>"; };
 		15A957DC0D7C347A002CFBB8 /* AfloatStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AfloatStorage.h; sourceTree = "<group>"; };
 		15A957DD0D7C347A002CFBB8 /* AfloatStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AfloatStorage.m; sourceTree = "<group>"; };
 		15B914260D721E5B005D9404 /* AfloatMenuBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AfloatMenuBadge.png; sourceTree = "<group>"; };
@@ -129,6 +102,9 @@
 		32DBCF630370AF2F00C91783 /* Afloat_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Afloat_Prefix.pch; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* Afloat.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Afloat.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB80DBEB231C1DB300823B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Afloat.xib; sourceTree = "<group>"; };
+		FB80DBEC231C1DB300823B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AfloatBadge.xib; sourceTree = "<group>"; };
+		FB80DBED231C1DB300823B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AfloatPanel.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,9 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15EDDA380DA80E4C00C16A67 /* Carbon.framework in Frameworks */,
-				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
-				15950C1E0D7F4D1600D48A24 /* QuartzCore.framework in Frameworks */,
 				1545809A0ECE273700F3D3D7 /* libBGHUDAppKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +124,6 @@
 			children = (
 				1512ABDB0E09AB7300BA67AC /* Afloat.xcconfig */,
 				1547F50E0F0A7E8D000E4267 /* AfloatScripting.xcodeproj */,
-				1513541D0D9E3DE1007D56FA /* Nag */,
 				08FB77AFFE84173DC02AAC07 /* Classes */,
 				32C88E010371C26100C91783 /* Other Sources */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -164,8 +136,7 @@
 		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
-				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+				154580990ECE273700F3D3D7 /* libBGHUDAppKit.a */,
 			);
 			name = "Frameworks and Libraries";
 			sourceTree = "<group>";
@@ -180,9 +151,9 @@
 				157C236A0D801D8C00A39E33 /* AfloatButtonPressed.png */,
 				15950BF30D7F4C9A00D48A24 /* AfloatHUDBackdrop.png */,
 				15B914260D721E5B005D9404 /* AfloatMenuBadge.png */,
-				153C04160D882CEF00037E2F /* Afloat.nib */,
-				15950BF90D7F4CA900D48A24 /* AfloatPanel.nib */,
-				15CB745A0D89336B002BAA81 /* AfloatBadge.nib */,
+				FB80DBE2231C1BD200823B67 /* Afloat.xib */,
+				FB80DBE0231C1BD200823B67 /* AfloatBadge.xib */,
+				FB80DBE4231C1BD200823B67 /* AfloatPanel.xib */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 			);
@@ -192,12 +163,12 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				15950BEB0D7F4C8700D48A24 /* AfloatPanel.h */,
-				15950BEC0D7F4C8700D48A24 /* AfloatPanel.m */,
 				15CB743C0D8932D3002BAA81 /* Badges */,
 				15950BEA0D7F4C7600D48A24 /* HUD */,
 				15F2FF6B0D6611BC00737D76 /* Afloat.h */,
 				15F2FF6C0D6611BC00737D76 /* Afloat.m */,
+				15950BEB0D7F4C8700D48A24 /* AfloatPanel.h */,
+				15950BEC0D7F4C8700D48A24 /* AfloatPanel.m */,
 				15A957DC0D7C347A002CFBB8 /* AfloatStorage.h */,
 				15A957DD0D7C347A002CFBB8 /* AfloatStorage.m */,
 				15C88C0D0E67149C003B01AA /* AfloatWindowIdentifier.h */,
@@ -206,56 +177,6 @@
 				1547F42F0F0A4E02000E4267 /* Afloat_AfloatScripting.m */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				154580990ECE273700F3D3D7 /* libBGHUDAppKit.a */,
-				1513548D0D9E41EC007D56FA /* Carbon.framework */,
-				15950C1D0D7F4D1600D48A24 /* QuartzCore.framework */,
-				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
-			);
-			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				089C167FFE841241C02AAC07 /* AppKit.framework */,
-				089C1672FE841209C02AAC07 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		1513541D0D9E3DE1007D56FA /* Nag */ = {
-			isa = PBXGroup;
-			children = (
-				1513543E0D9E3F5A007D56FA /* NSAlert+L0Alert.h */,
-				1513543F0D9E3F5A007D56FA /* NSAlert+L0Alert.m */,
-				1513542F0D9E3E4D007D56FA /* Resources */,
-				1513541E0D9E3DF9007D56FA /* main-Nag.m */,
-				151354270D9E3E31007D56FA /* Donate for Afloat-Info.plist */,
-				151354850D9E415C007D56FA /* AfloatNag.h */,
-				151354860D9E415C007D56FA /* AfloatNag.m */,
-				151354880D9E418C007D56FA /* Nag.pch */,
-				151354B00D9E44F8007D56FA /* Afloat_AfloatNagging.h */,
-				151354B10D9E44F8007D56FA /* Afloat_AfloatNagging.m */,
-				151354B60D9E455E007D56FA /* AfloatNagPreferences.h */,
-			);
-			name = Nag;
-			sourceTree = "<group>";
-		};
-		1513542F0D9E3E4D007D56FA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1513547A0D9E4116007D56FA /* AfloatDonateFirstAlert.alert */,
-				1513547B0D9E4116007D56FA /* AfloatDonateLastAlert.alert */,
-				1513547E0D9E412C007D56FA /* AfloatDonateFirstAlert.strings */,
-				151354800D9E412C007D56FA /* AfloatDonateLastAlert.strings */,
-				151354780D9E40DD007D56FA /* Donate.nib */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		1547F50F0F0A7E8D000E4267 /* Products */ = {
@@ -333,20 +254,26 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					8D5B49AC048680CD000E48DA = {
+						DevelopmentTeam = EX596BNL45;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Afloat" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
 				"zh-Hant",
 				en,
 				it,
+				fr,
+				Base,
+				de,
+				ja,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* Afloat */;
 			projectDirPath = "";
@@ -379,16 +306,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				FB80DBE7231C1BD200823B67 /* Afloat.xib in Resources */,
 				15B914270D721E5B005D9404 /* AfloatMenuBadge.png in Resources */,
+				FB80DBE6231C1BD200823B67 /* AfloatBadge.xib in Resources */,
 				15950BF40D7F4C9A00D48A24 /* AfloatHUDBackdrop.png in Resources */,
-				15950BFA0D7F4CA900D48A24 /* AfloatPanel.nib in Resources */,
 				157C23650D801C7A00A39E33 /* AfloatButton.png in Resources */,
 				157C236B0D801D8C00A39E33 /* AfloatButtonPressed.png in Resources */,
-				153C04180D882CEF00037E2F /* Afloat.nib in Resources */,
 				15CB74510D8932F6002BAA81 /* AfloatFloatingBadge.png in Resources */,
-				15CB745C0D89336B002BAA81 /* AfloatBadge.nib in Resources */,
 				154B2E140D895DD2004593D4 /* AfloatSinkingBadge.png in Resources */,
 				15522F9D0D999F770007B44F /* Afloat2.icns in Resources */,
+				FB80DBE8231C1BD200823B67 /* AfloatPanel.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +334,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\nSETICON=\"$MULTIVERSE\"/Tools/Xcode/seticon\n\nif [ -f \"$SETICON\" -a -x \"$SETICON\" ]; then\n\t\"$SETICON\" -d \"$SRCROOT\"/Afloat2.icns \"$BUILT_PRODUCTS_DIR\"/\"$WRAPPER_NAME\"\nfi\n\n\"$DEVELOPER_TOOLS_DIR\"/SetFile -a EBC \"$BUILT_PRODUCTS_DIR\"/\"$WRAPPER_NAME\"\n";
+			shellScript = "#SETICON=\"$MULTIVERSE\"/Tools/Xcode/seticon\n#if [ -f \"$SETICON\" -a -x \"$SETICON\" ]; then\n#    \"$SETICON\" -d \"$SRCROOT\"/Afloat2.icns \"$BUILT_PRODUCTS_DIR\"/\"$WRAPPER_NAME\"\n#fi\n#\"$DEVELOPER_TOOLS_DIR\"/SetFile -a EBC \"$BUILT_PRODUCTS_DIR\"/\"$WRAPPER_NAME\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -422,7 +349,6 @@
 				15950BF00D7F4C8700D48A24 /* AfloatPanelController.m in Sources */,
 				153C040B0D882C3700037E2F /* JRSwizzle.m in Sources */,
 				15CB745F0D8933B1002BAA81 /* AfloatBadgeController.m in Sources */,
-				151354B20D9E44F8007D56FA /* Afloat_AfloatNagging.m in Sources */,
 				15C88C0F0E67149C003B01AA /* AfloatWindowIdentifier.m in Sources */,
 				1547F4300F0A4E02000E4267 /* Afloat_AfloatScripting.m in Sources */,
 			);
@@ -447,52 +373,28 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		151354780D9E40DD007D56FA /* Donate.nib */ = {
+		FB80DBE0231C1BD200823B67 /* AfloatBadge.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				15A015B60E9BCBA3006B819C /* en */,
+				FB80DBEC231C1DB300823B67 /* Base */,
 			);
-			name = Donate.nib;
+			name = AfloatBadge.xib;
 			sourceTree = "<group>";
 		};
-		1513547E0D9E412C007D56FA /* AfloatDonateFirstAlert.strings */ = {
+		FB80DBE2231C1BD200823B67 /* Afloat.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				15A015B80E9BCBB0006B819C /* en */,
+				FB80DBEB231C1DB300823B67 /* Base */,
 			);
-			name = AfloatDonateFirstAlert.strings;
+			name = Afloat.xib;
 			sourceTree = "<group>";
 		};
-		151354800D9E412C007D56FA /* AfloatDonateLastAlert.strings */ = {
+		FB80DBE4231C1BD200823B67 /* AfloatPanel.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				15A015B70E9BCBAB006B819C /* en */,
+				FB80DBED231C1DB300823B67 /* Base */,
 			);
-			name = AfloatDonateLastAlert.strings;
-			sourceTree = "<group>";
-		};
-		153C04160D882CEF00037E2F /* Afloat.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15A015B00E9BCB14006B819C /* en */,
-			);
-			name = Afloat.nib;
-			sourceTree = "<group>";
-		};
-		15950BF90D7F4CA900D48A24 /* AfloatPanel.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15A015B10E9BCB23006B819C /* en */,
-			);
-			name = AfloatPanel.nib;
-			sourceTree = "<group>";
-		};
-		15CB745A0D89336B002BAA81 /* AfloatBadge.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15A015B20E9BCB26006B819C /* en */,
-			);
-			name = AfloatBadge.nib;
+			name = AfloatPanel.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -502,15 +404,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1512ABDB0E09AB7300BA67AC /* Afloat.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2.5.3;
+				DEVELOPMENT_TEAM = EX596BNL45;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -522,9 +428,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 2.5.3;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.infinite-labs.Afloat";
 				PRODUCT_NAME = Afloat;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
+				USER_VISIBLE_VERSION = 2.5.2;
+				VERSION = 2.5.2;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = YES;
 			};
@@ -534,15 +446,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1512ABDB0E09AB7300BA67AC /* Afloat.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2.5.3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = EX596BNL45;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Afloat_Prefix.pch;
@@ -552,9 +468,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 2.5.3;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.infinite-labs.Afloat";
 				PRODUCT_NAME = Afloat;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
+				USER_VISIBLE_VERSION = 2.5.2;
+				VERSION = 2.5.2;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -563,14 +485,71 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1512ABDB0E09AB7300BA67AC /* Afloat.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_VISIBLE_VERSION = 2.5.2;
+				VERSION = 2.5.2;
 			};
 			name = Debug;
 		};
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
